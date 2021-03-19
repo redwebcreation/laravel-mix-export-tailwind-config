@@ -1,11 +1,14 @@
 let fs = require('fs');
 let mix = require('laravel-mix');
 
-mix.extend('exportTailwindConfig', function (webpackConfig, configPath = './tailwind.config.js', exportPath = './storage/tailwind.config.json') {
-    let config = require(configPath);
+const resolveConfig = require('tailwindcss/resolveConfig');
 
-    fs.writeFile(
-        exportPath,
-        JSON.stringify(config, null, 2)
+mix.extend('exportTailwindConfig', function (webpackConfig, configPath = 'tailwind.config.js', exportPath = 'storage/tailwind.config.json') {
+    let basePath = __dirname + '/../../';
+    let config = require(basePath + configPath);
+
+    fs.writeFileSync(
+        basePath + exportPath,
+        JSON.stringify(resolveConfig(config), null, 2)
     );
 });

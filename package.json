@@ -22,5 +22,8 @@
   "homepage": "https://github.com/redwebcreation/laravel-mix-export-tailwind-config#readme",
   "devDependencies": {
     "laravel-mix": "^6"
+  },
+  "dependencies": {
+    "tailwindcss": "^2.0.4"
   }
 }
