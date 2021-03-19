@@ -3,7 +3,7 @@ let mix = require('laravel-mix');
 
 const resolveConfig = require('tailwindcss/resolveConfig');
 
-mix.extend('exportTailwindConfig', function (webpackConfig, configPath = 'tailwind.config.js', exportPath = 'storage/tailwind.config.json') {
+mix.extend('exportTailwindConfig', function (webpackConfig, configPath = 'tailwind.config.js', exportPath = 'storage/app/tailwind.config.json') {
     let basePath = __dirname + '/../../';
     let config = require(basePath + configPath);
 
