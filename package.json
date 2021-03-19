@@ -1,5 +1,5 @@
 {
-  "name": "laravel-mix-export-tailwind-config",
+  "name": "mix-export-tailwind-config",
   "version": "0.1.0",
   "description": "Export the tailwind config to a JSON file.",
   "main": "index.js",

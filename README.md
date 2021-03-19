@@ -3,18 +3,18 @@ This is [Laravel Mix](https://laravel-mix.com) plugin that generates a JSON file
 
 ## Installation
 ```bash
-npm install --save-dev laravel-mix-export-tailwind-config
+npm install --save-dev mix-export-tailwind-config
 ```
 or 
 ```bash
-yarn add -D laravel-mix-export-tailwind-config
+yarn add -D mix-export-tailwind-config
 ```
 
 ## Usage
 ```js
 // webpack.config.js
 
-require('laravel-mix-export-tailwind-config')
+require('mix-export-tailwind-config');
 
 mix
     .exportTailwindConfig( 
