@@ -1,0 +1,26 @@
+{
+  "name": "laravel-mix-export-tailwind-config",
+  "version": "0.1.0",
+  "description": "Export the tailwind config to a JSON file.",
+  "main": "index.js",
+  "keywords": [
+    "laravel",
+    "laravel mix",
+    "mix",
+    "tailwind",
+    "tailwind config",
+    "export tailwind config"
+  ],
+  "author": {
+    "name": "Félix Dorn",
+    "email": "github@felixdorn.fr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redwebcreation/laravel-mix-export-tailwind-config"
+  },
+  "homepage": "https://github.com/redwebcreation/laravel-mix-export-tailwind-config#readme",
+  "devDependencies": {
+    "laravel-mix": "^6"
+  }
+}
