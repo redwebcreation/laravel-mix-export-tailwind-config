@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: laravel-mix
+    versions:
+    - 6.0.16
+    - 6.0.18
+  - dependency-name: tailwindcss
+    versions:
+    - 2.1.1
